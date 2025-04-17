@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Barro y Alma</title>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Quicksand', sans-serif;
+      background-color: #f7f3ef;
+      color: #3e2f1c;
+    }
+    header {
+      background-color: #d8bfa4;
+      padding: 2rem;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-family: 'Playfair Display', serif;
+      font-size: 2.8rem;
+    }
+    nav {
+      text-align: center;
+      margin-top: 1rem;
+    }
+    nav a {
+      margin: 0 1rem;
+      text-decoration: none;
+      color: #3e2f1c;
+      font-weight: bold;
+    }
+    section {
+      padding: 2rem;
+      max-width: 800px;
+      margin: auto;
+    }
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .gallery img {
+      width: 100%;
+      max-width: 280px;
+      margin: 1rem;
+      border-radius: 10px;
+      box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+    form input, form textarea {
+      margin-bottom: 1rem;
+      padding: 0.7rem;
+      font-size: 1rem;
+      border: 1px solid #c5b8aa;
+      border-radius: 5px;
+    }
+    form input[type="submit"] {
+      background-color: #a58d75;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    form input[type="submit"]:hover {
+      background-color: #8d765f;
+    }
+    footer {
+      background-color: #d8bfa4;
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Barro y Alma</h1>
+    <p>Piezas de cerámica artesanal hechas a pedido</p>
+  </header>
+
+  <nav>
+    <a href="#inicio">Inicio</a>
+    <a href="#galeria">Galería</a>
+    <a href="#pedidos">Pedidos</a>
+    <a href="#sobre-mi">Sobre mí</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+
+  <section id="inicio">
+    <h2>Bienvenido</h2>
+    <p>Hola, soy un aprendiz de ceramista que crea piezas únicas hechas con amor y dedicación. Cada jarrón, taza o cuenco es hecho a mano y a pedido. ¡Gracias por pasar!</p>
+  </section>
+
+  <section id="galeria" class="gallery">
+    <h2>Galería</h2>
+    <img src="https://images.unsplash.com/photo-1607083201103-0f99e24d97cc?auto=format&fit=crop&w=600&q=80" alt="Jarrón artesanal 1">
+    <img src="https://images.unsplash.com/photo-1622630797087-67e2686a0dcb?auto=format&fit=crop&w=600&q=80" alt="Taza de cerámica">
+    <img src="https://images.unsplash.com/photo-1633971861108-20eb79bd1a60?auto=format&fit=crop&w=600&q=80" alt="Cuenco hecho a mano">
+  </section>
+
+  <section id="pedidos">
+    <h2>Haz tu pedido personalizado</h2>
+    <form>
+      <input type="text" placeholder="Tu nombre" required>
+      <input type="email" placeholder="Tu correo electrónico" required>
+      <textarea placeholder="Describe tu pedido (tipo de pieza, colores, tamaño, etc.)" rows="5" required></textarea>
+      <input type="submit" value="Enviar pedido">
+    </form>
+  </section>
+
+  <section id="sobre-mi">
+    <h2>Sobre mí</h2>
+    <p>Desde chico me fascina la idea de transformar barro en algo útil y hermoso. Empecé recientemente con la cerámica, y cada pieza es un aprendizaje y una expresión personal. Valoro lo artesanal, lo lento, lo que lleva alma.</p>
+  </section>
+
+  <section id="contacto">
+    <h2>Contacto</h2>
+    <p>Puedes escribirme a: <strong>tucorreo@ejemplo.com</strong></p>
+    <p>O seguirme en Instagram: <strong>@barroyalma</strong></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Barro y Alma - Cerámica artesanal hecha con amor</p>
+  </footer>
+</body>
+</html>
